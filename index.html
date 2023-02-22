@@ -7,29 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-
-    <title>LibraryProject by Osnac Auguste</title>
+    <title>Library Project</title>
 </head>
 
 <body>
-    <section class="header-section">
-        <div class="headerDiv">
-            <h1 class="headerTitle">Library</h1>
+    <header class="main-header">
+        <div class="image"> Image goes here!
         </div>
-        <div class="headerDescription">
-            <p>Keep a log of all the books you read this year</p>
+        <div class="button-div">
+            <button class="add-book-button">
+                Add a book
+            </button>
         </div>
-
-    </section>
-    <section class="user-input-section">
-
-    </section>
-    <section class="library-display-section">
-
-    </section>
-    <section class="footer-section">
-
-    </section>
+    </header>
+    <div class="form-div">
+        <form class="form">
+            <label for="book-title"> Book Title</label><br>
+            <input type="text" name="book-title" id="book-title"><br>
+            <label for="book-author"> Book's Author</label><br>
+            <input type="text" name="book-author" id="book-author"><br>
+            <label for="book-pages"> Number of Pages</label><br>
+            <input type="text" name="book-pages" id="book-pages"><br><br>
+            <input type="checkbox" id="read-book" name="read-book">
+            <label for="read-book"> I have read the Book</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="book-cards">
+    </div>
 
 </body>
 

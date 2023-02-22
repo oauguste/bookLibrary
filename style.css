@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image {
+  display: flex;
+  justify-content: start;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-div {
+  width: 70%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  background-color: lightskyblue;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+  width: 90%;
+  /* width: 100%; */
+}
+input[type="text"] {
+  transition: width 0.4s ease-in-out;
+  border: 2px solid green;
+  border-radius: 4px;
+  color: darkblue;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: rgb(4, 104, 71);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.add-book-button {
+  background-color: lightblue;
+  border: none;
+  color: darkblue;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 3px;
+}
+.book-cards {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 1 rem;
+  grid-template-columns: repeat(auto-fill, 250px);
+}
+.card {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+}
