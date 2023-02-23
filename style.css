@@ -1,6 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  color: #0099d5;
+}
+body {
+  background-color: rgb(0, 0, 31);
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
 }
 .main-header {
   display: flex;
@@ -24,7 +32,7 @@
   justify-content: center;
 }
 .form {
-  background-color: lightskyblue;
+  background-color: #1e2227;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -32,6 +40,9 @@
   justify-content: center;
   border-radius: 12px;
   text-align: center;
+}
+.hiddenClass {
+  display: none;
 }
 
 input[type="text"]:focus {
@@ -41,7 +52,7 @@ input[type="text"]:focus {
 }
 input[type="text"] {
   transition: width 0.4s ease-in-out;
-  border: 2px solid green;
+  border: 2px solid #d89a9e;
   border-radius: 4px;
   color: darkblue;
   padding: 12px 20px;
@@ -53,7 +64,7 @@ input[type="text"] {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: rgb(4, 104, 71);
+  background-color: #d89a9e;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -65,7 +76,7 @@ input[type="reset"] {
 }
 
 .add-book-button {
-  background-color: lightblue;
+  background-color: #d89a9e;
   border: none;
   color: darkblue;
   padding: 16px 32px;
@@ -80,16 +91,19 @@ input[type="reset"] {
   grid-auto-rows: auto;
   grid-gap: 1 rem;
   grid-template-columns: repeat(auto-fill, 250px);
+  padding: 2rem;
 }
 .card {
-  border: 2px solid #e7e7e7;
+  border: 2px solid #000;
   border-radius: 4px;
-  padding: 0.5rem;
+  padding: 1rem;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  color: #5d5e5e;
+  color: #016464;
+  grid-gap: 1rem;
+  background-color: #e6faf7;
 }

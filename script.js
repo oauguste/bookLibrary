@@ -1,3 +1,13 @@
+const addBookButton = document.querySelector(
+  ".add-book-button"
+);
+function displayForm() {
+  const formHidden = document.querySelector(".form");
+  formHidden.classList.toggle("hiddenClass");
+}
+
+addBookButton.addEventListener("click", displayForm);
+
 let myLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -26,6 +36,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
     addBookToLibrary();
+    displayForm();
   });
 
 Book.prototype.toggleRead = function () {
